@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<link rel="stylesheet" href='/static/style_template.css' />
+</head>
+<body>
+
+<div class="header">
+        <div class="inner_header">
+                <img src="/static/logo.png" class="logo">
+                <ul class="right_header">
+                    <a href="#"><li><strong>Home</strong></li></a>
+                    <a href="#"><li><strong>Products</strong></li></a>
+                    <a href="#"><li><strong>About</strong></li></a>
+                    <a href="#"><li><strong>Info</strong></li></a>
+    
+                </ul>
+            </div>
+</div>
+
+<p class="topic"><strong>Paper Recycling</strong></p>
+
+<div class="info" style="padding-top:5%;">
+<div class="odd">
+    <img src="{{url_for('static', filename = sorting_image1 )}}" class="odd_image">
+    <p class="odd_text"><strong>Landfill</strong><br/>
+        Anything that goes into your garbage can usually ends up in the landfill.  There are more than 3,000 landfills in the U.S. and three times that many that have already filled up.  A landfill is an environmental hazard that can contaminate the water supply when chemicals from compressed trash, leach into the soil.  Landfills are also major producers of methane gas – a greenhouse gas that can be deadly when inhaled and presents a fire hazard or even a potential for explosion.  </p>
+</div>
+</div>
+<div class="info">
+<div class="even">
+    <div class="even_text">
+    <p><strong>Food waste</strong><br/>
+        Up to 25% of the food in the U.S. is thrown away, uneaten.  Whether it is due to preparing too much or buying too much, we throw out 21.5 million tons of food every year.  A lot of that food – even if spoiled - is a lot better in the compost pile than it is in the garbage can.  You get great fertilizer and don’t take up space in the landfill.  Animal products can attract “critters” to your yard so compost anything that is plant-based.</p>
+    </div>
+        <img src="{{url_for('static', filename = sorting_image2 )}}" class="even_image">
+    
+</div>
+</div>
+
+
+
+
+<footer class="footer" style="margin-top:5%;">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>company</h4>
+				<ul>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">our services</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">affiliate program</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>get help</h4>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">shipping</a></li>
+					<li><a href="#">returns</a></li>
+					<li><a href="#">order status</a></li>
+					<li><a href="#">payment options</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>online shop</h4>
+				<ul>
+					<li><a href="#">watch</a></li>
+					<li><a href="#">bag</a></li>
+					<li><a href="#">shoes</a></li>
+					<li><a href="#">dress</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>follow us</h4>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+    
+</body>
+</html>
