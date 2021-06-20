@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<link rel="stylesheet" href='/static/style.css' />
+
+</head>
+
+<div class="header">
+	<div class="inner_header">
+			<img src="/static/logo.png" class="logo">
+			<ul class="right_header">
+				<a href="#"><li><strong>Home</strong></li></a>
+				<a href="#"><li><strong>Products</strong></li></a>
+				<a href="#"><li><strong>About</strong></li></a>
+				<a href="#"><li><strong>Info</strong></li></a>
+
+			</ul>
+		</div>
+</div>
+
+
+<div class="bg">
+	<img src="/static/bg.jpg" class="bg_image">	
+	<h1 class="bg_text"> Наш девіз <br/>Сортуй сміття, рятуй світ</h1>
+</div>
+
+
+<div class="sorting" style="background-attachment:fixed;">
+	<p class="sort_label">Що ми сортуємо?</p>
+
+	<div class="organic" style="margin-left:12.5%">
+		<img src = "/static/logo.png" class="sorting_img">
+		<p class="sort_text">СКЛО</p>
+		<div style="margin:20px;">
+		<!-- <a href="#" class="learn">Learn more</a> -->
+		<form action = "/choose_page" method = 'post'>
+			<p> <input type="submit" name = "info" value="Про скло" class = "learn" onclick="ShowAndHide()"> </p>
+		</form>
+		</div>
+	</div>
+
+	<div class="organic">
+		<img src = "/static/logo.png" class="sorting_img">
+		<p class="sort_text">ПАПІР</p>
+		<div style="margin:20px;">
+			<!-- <a href="#" class="learn">Learn more</a> -->
+			<form action = "/choose_page" method = 'post'>
+				<p> <input type="submit" name = "info" value="Про папір" class = "learn" onclick="ShowAndHide()"> </p>
+			</form>
+			</div>
+	</div>
+
+	<div class="organic">
+		<img src = "/static/logo.png" class="sorting_img">
+		<p class="sort_text">ПЛАСТИК</p>
+		<div style="margin:20px;">
+			<!-- <a href="#" class="learn">Learn more</a> -->
+			<form action = "/choose_page" method = 'post'>
+				<p> <input type="submit" name = "info" value="Пластик" class = "learn" onclick="ShowAndHide()"> </p>
+			</form>
+			</div>
+	</div>
+
+	<div class="organic">
+		<img src = "/static/logo.png" class="sorting_img">
+		<p class="sort_text">МЕТАЛ</p>
+		<div style="margin:20px;">
+			<form action = "/choose_page" method = 'post'>
+				<p> <input type="submit" value="Про метал" class = "learn" onclick="ShowAndHide()"> </p>
+			</form>
+			</div>
+	</div>
+
+</div>
+    
+
+<div id="wrapper">
+	<div class="first"><p class="Whysorttext"><strong>ЧОМУ МИ СОРТУЄМО?</strong></p></div>
+</div>
+
+
+<div class="issues">
+
+	<div class="odd">
+		<img src="/static/Landfill.jpg" class="odd_image">
+		<div class="odd_text">
+		<p><strong>Звалище</strong><br/>
+			Все, що потрапляє у ваш сміттєвий бак, зазвичай потрапляє на звалище. У США понад 3000 звалищ і втричі більше, ніж вже заповнені. Звалище - це екологічна небезпека, яка може забруднити водопостачання, коли хімікати зі стисненого сміття потрапляють у ґрунт. Звалища також є основними виробниками метанового газу - парникового газу, який при вдиханні може бути смертельним та представляти небезпеку пожежі або навіть потенційну вибух. </p>
+	</div>
+	</div>
+
+	<div class="even">
+		<div class="even_text">
+		<p><strong>Їжа</strong><br/>
+			До 25% їжі в США викидають. Незалежно від того, чи готуємо чи купуємо занадто багато, ми щороку викидаємо 21,5 мільйона тонн їжі. Багато їжі,навіть зіпсованої - це набагато краще в компостній купі, ніж у сміттєвому баку. Це чудове добриво і не займаєте багато місця на звалищі. Продукти тваринного походження можуть залучити на ваш двір «тваринок», тому компостуйте все, що на рослинній основі.</p>
+		</div>
+			<img src="/static/food.jpg" class="even_image">
+		
+	</div>
+
+
+	<div class="odd">
+		<img src="/static/trash.jpg" class="odd_image">
+		<div class="odd_text">
+		<p><strong>Забруднена Земля</strong><br/>
+			Більшість людей більше думають про повітря та воду, ніж про найбільш очевидний тип забруднення - сміття. Забруднення від сміття є неприємним явищем, але це становить більшу небезпеку. Сміття засмічує нашу систему водопостачання та каналізації, робить зони відпочинку небезпечними. Деякі види сміття, такі як поліетиленові пакети, склянки для йогурту та тримачі для упаковок загрожувать і вбивать дику природу, інші види сміття отруїюють воду.
+	</div>
+	</div>
+
+	<div class="even">
+		<div class="even_text">
+		<p><strong>Пластик</strong><br/>
+			Пластик ніколи не розкладеться на звалищі, але багато видів його можна переробити на довговічні товари, такі як обладнання для дитячих майданчиків та штучні пиломатеріали, що дозволить заощадити нафту, необхідну для виготовлення такого типу пластику. Переробка таких матеріалів, як папір, зменшує кількість палива та електроенергії, необхідних для заготівлі, транспортування та обробки деревини. Папір може бути перероблений до 4 разів.</div>
+			<img src="/static/plastic_main.jpg" class="even_image">
+		
+	</div>
+		
+	</div>
+
+</div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>company</h4>
+				<ul>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">our services</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">affiliate program</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>get help</h4>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">shipping</a></li>
+					<li><a href="#">returns</a></li>
+					<li><a href="#">order status</a></li>
+					<li><a href="#">payment options</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>online shop</h4>
+				<ul>
+					<li><a href="#">watch</a></li>
+					<li><a href="#">bag</a></li>
+					<li><a href="#">shoes</a></li>
+					<li><a href="#">dress</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>follow us</h4>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
